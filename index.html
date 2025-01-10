@@ -21,129 +21,76 @@
     <link href="styles/my.css" rel="stylesheet"/>
     <title>My test page</title>
   </head>
-  <body>   
-    <h1 >导航栏</h1> 
-    <nav class="nav " role="navigation">
-      <div class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">CSS</a>
+  <body>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+            入库管理
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <ul class="card-body nav flex-column d-grid gap-1">
+           <li class="nav-item"><button type="button" class="btn btn-info text-white btn-sm btn-block">钢坯购货情况录入</button></li> 
+           <li class="nav-item"><button type="button" class="btn btn-info text-white btn-sm btn-block">磅单录入</button></li>
+           <li class="nav-item"><button type="button" class="btn btn-info text-white btn-sm btn-block">月末入库表生成</button></li>
+           </ul>
+        </div>
       </div>
-     <div class="nav-item">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">Html</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Separated link</a></li>
-      </ul>
-    </div>
-      <div class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">Javascript</a>
+      <div class="card">
+        <div class="card-header">
+          <a
+            class="collapsed btn"
+            data-bs-toggle="collapse"
+            href="#collapseTwo"
+          >
+            生产管理
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <ul class="card-body nav flex-column d-grid gap-1">
+            <li class="nav-ite"><button type="button" class="btn btn-info text-white btn-sm btn-block">生产计划录入</button></li>
+            <li class="nav-item"><button type="button" class="btn btn-info text-white btn-sm btn-block">断料计划生成和打印</button></li>
+            <li class="nav-item"><button type="button" class="btn btn-info text-white btn-sm btn-block">生产周转卡打印</button></li>
+            <li class="nav-item"><button type="button" class="btn btn-info text-white btn-sm btn-block">钢管生产情况录入</button></li>
+          </ul>
+        </div>
       </div>
-    </nav>  
-    <div class="container-fluid p-2 my-2 bg-primary text-white overflow-hidden">  
-      <div class="row gy-5">
-        <div class="col-2 p-3 border" style="background-color: #92cfbd;
-            box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">.col-6</div>
-        <div class="col-10 p-3 border" style="background-color: #dedef8;box-shadow: 
-        inset 1px -1px 1px #444, inset -1px 1px 1px #444;">.col-6</div>
+      <div class="card">
+        <div class="card-header">
+          <a
+            class="collapsed btn"
+            data-bs-toggle="collapse"
+            href="#collapseThree"
+          >
+           出库管理
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <ul class="card-body nav flex-column d-grid gap-1">
+            <li class="nav-item"><button type="button" class="btn btn-info text-white btn-sm btn-block">本轮生产使用钢坯出库</button></li>
+            <li class="nav-item"><button type="button" class="btn btn-info text-white btn-sm btn-block">钢坯退货及外销出库</button></li>
+            <li class="nav-item"><button type="button" class="btn btn-info text-white btn-sm btn-block">月末出库表生成</button></li>
+          </ul>
+        </div>
+        <div class="card-header">
+            <a
+              class="collapsed btn"
+              data-bs-toggle="collapse"
+              href="#collapsefour"
+            >
+             库存查询
+            </a>
+          </div>
+          <div id="collapsefour" class="collapse" data-bs-parent="#accordion">
+            <ul class="card-body nav flex-column d-grid gap-1">
+              <li class="nav-item"><button type="button" class="btn btn-info text-white btn-sm btn-block">按使用类型查询钢种库存</button></li>
+              <li class="nav-item"><button type="button" class="btn btn-info text-white btn-sm btn-block">库存总体情况表</button></li>
+              <li class="nav-item"><button type="button" class="btn btn-info text-white btn-sm btn-block">已断未使用余料表</button></li>
+            </ul>
+          </div>
       </div>
-    </div>
-    <article>
-      <header>使用 mark 元素来 <mark>高亮</mark> 文本。</header>
-      <p class="bg-info text-white">Bootstrap 5 定义abbr元素的样式为显示在文本底部的一条虚线边框: The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-    </article>
-    <h1>Blockquotes</h1>
-    <p>The <code>blockquote</code> element is used to present content from another source:</p>
-    <blockquote class="blockquote">
-      <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
-      <footer class="blockquote-footer">From WWF's website</footer>
-    </blockquote>    
-    <h1>Keyboard Inputs</h1>
-    <p class="text-capitalize">To indicate input that is typically entered via the keyboard, use the <code>kbd</code> element:</p>
-    <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
-    <h1>Multiple Code Lines</h1>
-<p class="text-white-50 bg-dark">For multiple lines of code, use the <Code>pre</Code> element:</p>
-<pre>
-Text in a pre element
-is displayed in a fixed-width
-font, and it preserves
-both      spaces and
-line breaks.
-</pre>
-<div class="mt-4 p-5 bg-primary text-white rounded">
-  <h1>菜鸟教程</h1> 
-  <p>学的不仅是技术，更是梦想！！！</p>
-  <p>学的不仅是技术，更是梦想！！！</p> 
-	<p>学的不仅是技术，更是梦想！！！</p>
-</div>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Features</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Pricing</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown link
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </li>
-  </ul>
-  </div>
-  </div>
-  </nav>
-  
-  <div class="container">
-    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-    <div class="col">
-    <div class="p-3 border bg-light">Row column</div>
-    </div>
-    <div class="col">
-    <div class="p-3 border bg-light">Row column</div>
-    </div>
-    <div class="col">
-    <div class="p-3 border bg-light">Row column</div>
-    </div>
-    <div class="col">
-    <div class="p-3 border bg-light">Row column</div>
-    </div>
-    <div class="col">
-    <div class="p-3 border bg-light">Row column</div>
-    </div>
-    <div class="col">
-    <div class="p-3 border bg-light">Row column</div>
-    </div>
-    <div class="col">
-    <div class="p-3 border bg-light">Row column</div>
-    </div>
-    <div class="col">
-    <div class="p-3 border bg-light">Row column</div>
-    </div>
-    <div class="col">
-    <div class="p-3 border bg-light">Row column</div>
-    </div>
-    <div class="col">
-    <div class="p-3 border bg-light">Row column</div>
-    </div>
-    </div>
-    </div>
+    </div> 
  <script src="scripts/bootstrap.bundle.min.js" type="module"></script>
   </body>
 </html>
