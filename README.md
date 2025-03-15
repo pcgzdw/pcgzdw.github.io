@@ -1,7 +1,9 @@
 # express 程序建立：
 ### 一、前提：
  #### 1、安装好node.建立保存应用程序的文件夹并把该文件夹做为当前目录:(mkdir myapp; cd myapp),运行cnpm init建立你的应用程序并创建相应的package.json 文件，安装好 Express作为依赖项，新建一个app.js文件包括如下代码
-`const express = require('express')
+
+```
+const express = require('express')
 const app = express()
 const port = 3000
 
@@ -11,7 +13,8 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
-})`
+})
+```
 就完成了一个最简单的express应用程序;
  #### 2、安装好Express 生成器 cnpm install -g express-generator
 ### 二、文本复制：ctrl+shift+方向键（含home end键）
