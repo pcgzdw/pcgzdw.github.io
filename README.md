@@ -1,7 +1,19 @@
-# vs键盘操作：
-### 一、光标移动：
- #### 1、按单词移动只需按ctrl+方向键（含home end键），选择内容时还要同时按下shift键
- #### 2、将光标放在{前用ctrl+shift+{可将代码块收缩在一起，用ctrl+shif+}可将代码块展开。
+# express 程序建立：
+### 一、前提：
+ #### 1、安装好node.建立保存应用程序的文件夹并把该文件夹做为当前目录:(mkdir myapp; cd myapp),运行cnpm init建立你的应用程序并创建相应的package.json 文件，安装好 Express作为依赖项，新建一个app.js文件包括如下代码
+`const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})`
+就完成了一个最简单的express应用程序;
+ #### 2、安装好Express 生成器 cnpm install -g express-generator
 ### 二、文本复制：ctrl+shift+方向键（含home end键）
 ### 三、删除操作：先选定内容再按delete键,ctrl+shift+k可直接删除当前行
 ### 四、剪切操作：ctrl+x可直接剪切当前行，alt+上下方向键可将该行直接上下移动或将选中的多行上下移动。
