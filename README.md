@@ -19,21 +19,12 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 ```
-###### 5) 这就完成了一个最简单的express应用程序;然后在命令行上运行node app.js，并在浏览器中加载 http://localhost:3000/ 以查看输出
+   ###### 5) 这就完成了一个最简单的express应用程序;然后在命令行上运行node app.js，并在浏览器中加载 http://localhost:3000/ 以查看输出
 
- #### 2、安装好Express 生成器 cnpm install -g express-generator
-### 二、文本复制：ctrl+shift+方向键（含home end键）
-### 三、删除操作：先选定内容再按delete键,ctrl+shift+k可直接删除当前行
-### 四、剪切操作：ctrl+x可直接剪切当前行，alt+上下方向键可将该行直接上下移动或将选中的多行上下移动。
-### 五、alt+shift+上下方向键可将当前行复制到当前行的上下，或将选中的多行复制到当前行的上下。
-### 六、ctrl+enter可在当前行的下面新开一行，ctrl+shift+enter可在当前行的上面新开一行。
-### 七、撤消光标移动ctrl+u可撤消上一次光标的移动。
-### 八、alt+上下方向键可把当前行上下移动。
+  #### 2、使用应用程序生成器工具 express-generator 快速创建应用程序骨架。
+   ##### 1）安装好Express 生成器express-generator(cnpm install -g express-generator);
+   ##### 2）创建一个名为 myapp 的 Express 应用程序。该应用程序将在当前工作目录中名为 myapp 的文件夹中创建，并且视图引擎将设置为(Pug：express --view=pug myapp)
+   ##### 3) 安装依赖(cd myapp;cnpm install)
+   ##### 4) 在 Windows 命令提示符上，使用以下命令 set DEBUG=myapp:* & npm start启动服务器程序。
+   ##### 5）然后在浏览器中加载 http://localhost:3000/ 以访问该应用程序。
 
-function bar（）
-{
-    foo();    
-}
-你好
-你好
-你好
