@@ -1,5 +1,5 @@
-#：前提条件：首先安装好安装好node。
- ### 一、express 程序建立
+## 一、express 程序建立
+ ### （一）前提条件：首先安装好安装好node。
   #### 1、最简单的express程序建立：
    ######  1）建立保存应用程序的文件夹并把该文件夹做为当前目录:(mkdir myapp; cd myapp);
    ######  2）运行cnpm init建立你的应用程序并创建相应的package.json 文件;
@@ -19,7 +19,7 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 ```
-##### 5) 这就完成了一个最简单的express应用程序;然后在命令行上运行node app.js，并在浏览器中加载 http://localhost:3000/ 以查看输出
+###### 5) 这就完成了一个最简单的express应用程序;然后在命令行上运行node app.js，并在浏览器中加载 http://localhost:3000/ 以查看输出
 
  #### 2、安装好Express 生成器 cnpm install -g express-generator
 ### 二、文本复制：ctrl+shift+方向键（含home end键）
