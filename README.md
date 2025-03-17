@@ -26,7 +26,7 @@ app.listen(port, () => {
 -     3). 安装依赖(cd myapp;cnpm install)
 -     4). 在 Windows 命令提示符上，使用以下命令 set DEBUG=myapp:* & npm start启动服务器程序。
 -     5). 然后在浏览器中加载 http://localhost:3000/ 以访问该应用程序。
-### 二. 加入用户认证功能：
+### 二、加入用户认证功能：
 -  1. 在routes文件夹下增加一个auth.js文件。并在index.js文件中加入如下代码增加一个登录路由：
 
 ```
