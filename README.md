@@ -1,5 +1,5 @@
 ### 一、express 程序建立: (前提条件：首先安装好安装好node)
--  (一). 最简单的express程序建立：
+####  (一). 最简单的express程序建立：
 -    1). 这里是列表文本建立保存应用程序的文件夹并把该文件夹做为当前目录:(mkdir myapp; cd myapp);
 -    2). 运行cnpm init建立你的应用程序并创建相应的package.json 文件;
 -    3). 安装好 Express作为依赖项(cnpm install express)，
@@ -26,7 +26,7 @@ app.listen(port, () => {
 -     3). 安装依赖(cd myapp;cnpm install)
 -     4). 在 Windows 命令提示符上，使用以下命令 set DEBUG=myapp:* & npm start启动服务器程序。
 -     5). 然后在浏览器中加载 http://localhost:3000/ 以访问该应用程序。
-- （二）. 加入用户认证功能：
+#### （二）. 加入用户认证功能：
 -  1. 在routes文件夹下增加一个auth.js文件。并在index.js文件中加入如下代码增加一个登录路由：
 
 ```
