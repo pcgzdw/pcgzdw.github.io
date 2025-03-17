@@ -18,7 +18,7 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 ```
-   ###### 5) 这就完成了一个最简单的express应用程序;然后在命令行上运行node app.js，并在浏览器中加载 http://localhost:3000/ 以查看输出
+- 5) 这就完成了一个最简单的express应用程序;然后在命令行上运行node app.js，并在浏览器中加载 http://localhost:3000/ 以查看输出
 
   #### 2、使用应用程序生成器工具 express-generator 快速创建应用程序骨架。
    ##### 1）安装好Express 生成器express-generator(cnpm install -g express-generator);
