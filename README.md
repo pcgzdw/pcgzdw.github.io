@@ -34,9 +34,9 @@ router.get('/login', function(req, res, next) {
   res.render('login');
 });
 ```
--  2. 在app.js文件中require相应位置增加var authRouter = require('./routes/auth');在路由indexRouter后增加app.use('/',authRouter);
--  3.、在views文件夹下新建一模板文件login.pug作为登录模板文件; 安装好jquery bootstrap包，并将bootstrap.min.css复制到public目录下的stylesheetsh目录下，将bootstrap.bundle.min.js和jquey.min.js复制到public目录下的javascripts目录下。并在views目录下的layout.pug中包含对三个文件的引用。
--  4. 安装passport、passport-local、并在index.js文件引入。
+- 2. 在app.js文件中require相应位置增加var authRouter = require('./routes/auth');在路由indexRouter后增加app.use('/',authRouter);
+- 3. 在views文件夹下新建一模板文件login.pug作为登录模板文件; 安装好jquery bootstrap包，并将bootstrap.min.css复制到public目录下的stylesheetsh目录下，将bootstrap.bundle.min.js和jquey.min.js复制到public目录下的javascripts目录下。并在views目录下的layout.pug中包含对三个文件的引用。
+- 4. 安装passport、passport-local、并在index.js文件引入。
 
 
 
