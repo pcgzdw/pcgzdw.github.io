@@ -26,11 +26,24 @@ app.listen(port, () => {
 ```
 -  5). 这就完成了一个最简单的express应用程序;然后在命令行上运行node app.js，并在浏览器中加载 http://localhost:3000/ 以查看输出
 ####  (二). 使用应用程序生成器工具 express-generator 快速创建应用程序骨架。
--   1. 安装好Express 生成器express-generator(cnpm install -g express-generator);
--   2. 创建一个名为 myapp 的 Express 应用程序。该应用程序将在当前工作目录中名为 myapp 的文件夹中创建，并且视图引擎将设置为(Pug：express --view=pug myapp)
--   3. 安装依赖(cd myapp;cnpm install)
--   4. 在 Windows 命令提示符上，使用以下命令 set DEBUG=myapp:* & npm start启动服务器程序。
--   5. 然后在浏览器中加载 http://localhost:3000/ 以访问该应用程序。
+-   1. 安装好Express 生成器
+```
+express-generator(cnpm install -g express-generator);
+```
+-   2. 创建一个名为 myapp 的 Express 应用程序。该应用程序将在当前工作目录中名为 myapp 的文件夹中创建，并且视图引擎将设置为Pug：
+```
+express --view=pug myapp)
+```
+-   3. 安装依赖
+```
+cd myapp;
+cnpm install)
+```
+-   4. 在 Windows 命令提示符上，使用以下命令启动服务器程序。
+```
+ set DEBUG=myapp:* & npm start
+```
+-  5. 然后在浏览器中加载 http://localhost:3000/ 以访问该应用程序。
 
 ### 二、加入用户认证功能：
 -  1. 在routes文件夹下增加一个auth.js文件。并在index.js文件中加入如下代码增加一个登录路由：
