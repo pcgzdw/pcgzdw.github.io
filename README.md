@@ -44,6 +44,15 @@ cnpm install
 ```
  set DEBUG=myapp:* & cnpm start
 ```
+-  5.安装bootstap和jquery，cnpm install bootstrap; cnpm install jquery;并将bootstrap.bundle.min.js和jquery.min.js复制到public/javascripts文件夹下， 
+--  bootstrap.min.css复制到public/stylesheets文件夹下。并在layout.pug文件头中加入link(rel='stylesheet', href="/stylesheets/bootstrap.min.css")
+--  body标签最后加入
+```
+     block scripts
+     script(src="/javascripts/jquery.min.js")
+     script(src="/javascripts/bootstrap.bundle.min.js")
+```
+-- 完成对bootstrap和jquery的支持。
 -  5. 然后在浏览器中加载 http://localhost:3000/ 以访问该应用程序。
 
 ### 二、加入用户认证功能：
