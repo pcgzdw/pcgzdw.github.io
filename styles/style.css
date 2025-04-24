@@ -1,0 +1,85 @@
+/* 在 CSS 中，所有的元素都被一个个的“盒子”包围着,盒子有内部显示（inner display type）和外部显示（outer display type）
+两种类型，一般使用 display 属性为显示类型设置各种值。外部显示类型盒子反映了在页面流中盒子的行为方式以及与页面上其他盒子
+的关系，一般分为区块盒子（block boxes）用display: block设置和行内盒子（inline boxes）用display: inline设置，内部显示
+类型决定了盒子内元素的布局方式有：默认（堆叠）、display: flex、display: grid三种，display: inline-block 是 display 的
+一个特殊值，它设置行内元素 width 和height 属性会生效。padding、margin 和 border 会推开其他元素。而对于标准的行内元素设置
+其宽度和高度都会被忽略，上下外边距、内边距边框会都得到了应用。
+*/
+/*采用替代盒框模型，width、height为可见盒子的宽高，而不是标准盒框模型指内容的宽高*/
+html{
+  font-size: 1.4vw;
+  box-sizing: border-box;
+  margin: 0;  
+}
+
+.blog-header {
+  border-bottom: 1px solid #e5e5e5;  
+}
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #727272;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+.offcanvas.offcanvas-end{
+  width: 100%;
+}
+
+li {
+  margin: 0 1rem;
+  width: auto;
+}
