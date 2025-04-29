@@ -3,26 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.css" />
     <link rel="stylesheet" href="./styles/grid.css" />
     <title>Document</title>
   </head>
-  <body>    
-    <header>
-      <nav>
-
+  <body>
+    <header class="navbar navbar-dark bg-dark navbar-expand-xl bd-navbar sticky-top">
+      <nav class="container-fluid bd-gutter d-flex justify-content-between flex-lg-nowrap" aria-label="Main navigation">
+        <a class="navbar-brand p-0 me-0 me-lg-2" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-file-person-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"
+            />
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header border-bottom border-secondary mx-3">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#offcanvasExample"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav d-flex justify-content-start pe-3 flex-row">
+              <li class="nav-item mx-2 rounded-3 mb-1 px-2">
+                <a
+                  class="nav-link py-2 px-0 px-lg-2 active"
+                  aria-current="true"
+                  href="#"
+                  >中文文档</a
+                >
+              </li>
+              <li class="nav-item mx-2 rounded-3 mb-1 px-2">
+                <a
+                  class="nav-link py-2 px-0 px-lg-2 active"
+                  aria-current="true"
+                  href="#"
+                  >示例</a
+                >
+              </li>
+              <li class="nav-item mx-2 rounded-3 mb-1 px-2">
+                <a
+                  class="nav-link py-2 px-0 px-lg-2 active"
+                  aria-current="true"
+                  href="#"
+                  >图标库</a
+                >
+              </li>
+              <li class="nav-item mx-2 rounded-3 mb-1 px-2">
+                <a
+                  class="nav-link py-2 px-0 px-lg-2 active"
+                  aria-current="true"
+                  href="#"
+                  >精选模板</a
+                >
+              </li>
+              <li class="nav-item rounded-3 mb-1 px-2">
+                <a
+                  class="nav-link py-2 px-0 px-lg-2 active"
+                  aria-current="true"
+                  href="#"
+                  >官方博客</a
+                >
+              </li>
+            </ul>
+            <hr class="text-white-80" />
+            <ul
+              class="navbar-nav d-flex justify-content-start pe-3 flex-row flex-grow-1"
+            >
+              <li class="nav-item dropdown mx-2 rounded-3 mb-1 px-2">
+                <a
+                  class="btn dropdown-toggle text-white py-2"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  >下拉按钮</a
+                >
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <hr class="text-white-80" />
+            <div class="navbar-nav">
+              <form class="navbar-form">
+                <div class="row">
+                  <div class="col-8 position-relative">
+                    <input
+                      class="form-control ps-4"
+                      type="search"
+                      placeholder="搜索"
+                      aria-label="Search"
+                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-search position-absolute"
+                      viewBox="0 0 16 16"
+                      id="search"
+                    >
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-dark" type="submit">搜索</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
       <aside>
-
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
       </aside>
       <section>
-
+        <p>
+          我们认为以下真理是<del><em>神圣而不可否认</em></del
+          ><ins>不言而喻</ins>的。
+        </p>
       </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
   </body>
 </html>

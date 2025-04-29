@@ -1,9 +1,12 @@
 
 html{
-  font-size: 1.5vw;
+  font-size: 16px;
   box-sizing: border-box;
   margin: 0;
-  width: 100vw;
-  height:100vh;
-  border: 1vh solid #200202;
+  width: 100vw; 
+}
+#search{ 
+  left: 17px;
+  top: 10px; 
+  color: #3f3333;
 }

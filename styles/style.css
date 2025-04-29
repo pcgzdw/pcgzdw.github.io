@@ -7,18 +7,10 @@
 */
 /*采用替代盒框模型，width、height为可见盒子的宽高，而不是标准盒框模型指内容的宽高*/
 html{
-  font-size: 1.4vw;
+  font-size: 16px;
   box-sizing: border-box;
   margin: 0;  
 }
 
-.offcanvas.offcanvas-end{
-  width: 100%;
-}
-body main,body nav{
-  font-size: 16px; 
-}
-li {
-  margin: 0 1em;
-  width: auto;
-}
+
+
